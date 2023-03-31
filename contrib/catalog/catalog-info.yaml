@@ -5,8 +5,8 @@ metadata:
   name: kind-k8s
   annotations:
     'kubernetes.io/api-server': http://127.0.0.1:34085
-    'kubernetes.io/auth-provider': serviceAccount
-    'kubernetes.io/auth-provider': ${K8S_TOKEN}
+    'kubernetes.io/authProvider': serviceAccount
+    'kubernetes.io/serviceAccountToken': ${K8S_TOKEN}
     'kubernetes.io/skip-metrics-lookup': 'true'
 spec:
   type: kubernetes-cluster
