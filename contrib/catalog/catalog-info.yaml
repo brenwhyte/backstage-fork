@@ -1,19 +1,5 @@
 ---
 apiVersion: backstage.io/v1alpha1
-kind: Resource
-metadata:
-  name: kind
-  annotations:
-    'kubernetes.io/url': https://localhost:34085
-    'kubernetes.io/authProvider': serviceAccount
-    'kubernetes.io/skipTLSVerify': 'true'
-    'kubernetes.io/serviceAccountToken': 'eyJhbGciOiJSUzI1NiIsImtpZCI6ImMwM2djR2g4WnVRSTY3aUFfM2RKYk1sQlk4M2U4NnhSOWk2X1g1YTZXY1UifQ.eyJpc3MiOiJrdWJlcm5ldGVzL3NlcnZpY2VhY2NvdW50Iiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9uYW1lc3BhY2UiOiJkZWZhdWx0Iiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9zZWNyZXQubmFtZSI6ImJhY2tzdGFnZSIsImt1YmVybmV0ZXMuaW8vc2VydmljZWFjY291bnQvc2VydmljZS1hY2NvdW50Lm5hbWUiOiJiYWNrc3RhZ2UiLCJrdWJlcm5ldGVzLmlvL3NlcnZpY2VhY2NvdW50L3NlcnZpY2UtYWNjb3VudC51aWQiOiJjNTliMmY4ZC1mMzJkLTRlODQtYTYzNy1kZGRkMjc5YmU4ZDIiLCJzdWIiOiJzeXN0ZW06c2VydmljZWFjY291bnQ6ZGVmYXVsdDpiYWNrc3RhZ2UifQ.h2xVbMEzuCFTbxcWqQik-Zl7Ea3srjXoD3JhFAgm2TNcTH0PG9o6swsjgMeipgq29B17Ymb8Yj1ItBYIBNAUmhG2aP9hIlX3HDbnVa6yddzeqf_Pl6FmPmomIzudyWrBSCLVegpNmJvuNKL1bLlwFyy9R2Sr3XWyPvY2gtvldlTTjINHdgYgssWAgRYgak9wrjSVVN1TgvgvvX9BbqWcJF-NLCn3TpCbQZXRsgxpk5C2f7vUZ0r9UYS8sc0wD7dyvUuIOG3d2gKfXKfhc4FInjXbw8k8hbQ94faujqOdCgDsfaECvRErHxv0dH33hXg1ARE65SP8g18AjqRLia7wPw'
-    'kubernetes.io/skip-metrics-lookup': 'false'
-spec:
-  type: kubernetes-cluster
-  owner: group:krypton
----
-apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   annotations:
