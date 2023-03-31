@@ -4,8 +4,9 @@ kind: Resource
 metadata:
   name: kind-k8s
   annotations:
-    'kubernetes.io/url': http://127.0.0.1:34085
+    'kubernetes.io/url': https://127.0.0.1:34085
     'kubernetes.io/authProvider': serviceAccount
+    'kubernetes.io/skipTLSVerify': 'true'
     'kubernetes.io/serviceAccountToken': ${K8S_TOKEN}
     'kubernetes.io/skip-metrics-lookup': 'true'
 spec:
