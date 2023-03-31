@@ -1,5 +1,18 @@
 ---
 apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: kind-k8s
+  annotations:
+    'kubernetes.io/api-server': http://127.0.0.1:34085
+    'kubernetes.io/auth-provider': serviceAccount
+    'kubernetes.io/serviceAccountToken': ${K8S_TOKEN}
+    'kubernetes.io/skip-metrics-lookup': 'true'
+spec:
+  type: kubernetes-cluster
+  owner: group:krypton
+---
+apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   annotations:
