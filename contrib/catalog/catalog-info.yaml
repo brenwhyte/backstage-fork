@@ -2,7 +2,7 @@
 apiVersion: backstage.io/v1alpha1
 kind: Resource
 metadata:
-  name: kind-k8s
+  name: kind
   annotations:
     'kubernetes.io/url': https://127.0.0.1:34085
     'kubernetes.io/authProvider': serviceAccount
@@ -18,7 +18,7 @@ kind: Component
 metadata:
   name: kube-dns
   annotations:
-    'backstage.io/kubernetes-id': kind-k8s
+    'backstage.io/kubernetes-id': kind
     'backstage.io/kubernetes-namespace': kube-system
     'backstage.io/kubernetes-label-selector': 'k8s-app=kube-dns'
 spec:
