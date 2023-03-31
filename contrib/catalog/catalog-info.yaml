@@ -13,12 +13,14 @@ spec:
   owner: group:krypton
 ---
 apiVersion: backstage.io/v1alpha1
-kind: Service
+kind: Component
 metadata:
   name: kube-dns
   annotations:
+    'backstage.io/kubernetes-id': kind-k8s
+    'backstage.io/kubernetes-namespace': default
     'backstage.io/kubernetes-label-selector': 'k8s-app=kube-dns'
 spec:
   type: service
-  lifecycle: stable
+  lifecycle: production
   owner: group:krypton
