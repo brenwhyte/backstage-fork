@@ -18,7 +18,7 @@ metadata:
   name: kube-dns
   annotations:
     'backstage.io/kubernetes-id': kind-k8s
-    'backstage.io/kubernetes-namespace': default
+    'backstage.io/kubernetes-namespace': kube-system
     'backstage.io/kubernetes-label-selector': 'k8s-app=kube-dns'
 spec:
   type: service
