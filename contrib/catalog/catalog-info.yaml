@@ -4,9 +4,9 @@ kind: Resource
 metadata:
   name: kind-k8s
   annotations:
-    'kubernetes.io/api-server': http://localhost:35495
-    'kubernetes.io/auth-provider': serviceAccount
-    'kubernetes.io/serviceAccountToken': ${K8S_TOKEN}
+    'kubernetes.io/api-server': 'http://localhost:35495'
+    'kubernetes.io/auth-provider': 'serviceAccount'
+    'kubernetes.io/serviceAccountToken': '${K8S_TOKEN}'
     'kubernetes.io/skip-tls-verify': 'true'
     'kubernetes.io/skip-metrics-lookup': 'true'
 spec:
